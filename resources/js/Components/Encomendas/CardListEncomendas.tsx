@@ -27,7 +27,7 @@ export default function CardListEncomenda(){
   const fecharModal = () => {
       setModalOpen(false);
       //window.location.href = '/dashboard';
-      //location.replace("/dashboard");
+      //location.replace("/dashboard"); 
   };
     return(
         <>
