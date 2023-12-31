@@ -1,0 +1,46 @@
+.esconde{
+    animation: leftmove forwards 0.22s;
+    position: relative;
+}
+.mostra{
+    animation: rightmove forwards .22s;
+    position: relative;
+}
+
+@keyframes leftmove {
+    from{
+        position: relative !important;
+        left: 0;
+        display: block;
+    }to{
+        position: relative;
+        left: -200px;
+        display: hidden;
+    }
+}
+
+@keyframes rightmove {
+    from{
+        position: relative;
+        left: -200px;
+        display: block;
+    }to{
+        position: relative;
+        left: 0;
+        display: hidden;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .mostra{
+        width: 90%;
+        position: absolute !important;
+        z-index: 999;
+    }
+    .btn-show{
+        position: absolute;
+        left: 0;
+        z-index: 999;
+    }
+}
